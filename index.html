@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .color-box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 2px solid #333;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .change-btn {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .change-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="color-box" id="colorBox"></div>
+        <button class="change-btn" id="changeBtn">შეცვალე ფერი</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
